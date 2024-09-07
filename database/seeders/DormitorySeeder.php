@@ -14,7 +14,7 @@ class DormitorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('dormitories')->truncate(); // 清空宿舍表
+        //DB::table('dormitories')->truncate(); // 清空宿舍表
 
         DB::table('dormitories')->insert([
             ['name' => '516', 'capacity' => 3, 'current_count' => 0],
