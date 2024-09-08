@@ -22,7 +22,7 @@ class DormitoryController extends Controller
 
         // 检查宿舍是否已满
         if ($dormitory->current_count >= $dormitory->capacity) {
-            return response()->json(['message' => '宿舍已满'], 2001);
+            return response()->json(['message' => '宿舍已满'], 204);
         }
 
         // 查找学生

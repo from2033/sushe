@@ -25,7 +25,7 @@ class AuthController extends Controller
             return response()->json([
                 'status' => 'error',
                 'message' => '学号不存在'
-            ], 2002);
+            ], 204);
         }
     }
 }
